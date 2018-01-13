@@ -1,0 +1,540 @@
+* {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    /* transform: rotate(20deg); */
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+.lnr {
+    cursor: pointer;
+}
+
+.lnr-magnifier {
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+.lnr-menu {
+    font-size: 38px;
+    margin-right: 30px;
+}
+
+.lnr-cross {
+    font-size: 38px;
+    margin-right: 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    /* background-color: pink; */
+    top: 0;
+    width: 70vw;
+    height: 40px;
+    margin-left: 15vw;
+    /* margin-top: 80px; */
+    padding-top: 15px;
+    /* transition: top 0.6s; */
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 28px;
+    /* margin-bottom: 20px; */
+    color: black;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 3;
+    width: 70vw;
+    height: 40px;
+    margin-left: 15vw;
+    padding-top: 12px;
+}
+
+.search {
+    width: 300px;
+    height: 30px;
+    font-size: 19px;
+    padding-left: 10px;
+    border: 1px solid #D8D9DA;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    letter-spacing: 8px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+section {
+    width: 70vw;
+    margin-left: 15vw;
+}
+
+/* MAIN IMAGE */
+
+.main-image-container {
+    /* display: flex;
+    justify-content: center; */
+    width: 100vw;
+}
+
+.main-image {
+    width: 70%;
+    height: 100%;
+}
+
+.dots {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.dot {
+    background-color: #D8D9DA;
+    height: 14px;
+    width: 14px;
+    margin-left: 20px;
+    border-radius: 14px;
+}
+
+.dot:first-of-type {
+    background-color: #7E7F80;
+}
+
+.main-image-info h2 {
+    font-weight: 500;
+    font-size: 26px;
+    margin: 0;
+}
+
+.main-image-info p {
+    font-weight: 300;
+    font-size: 26px;
+}
+
+.marker {
+    margin-top: 50px;
+}
+
+hr {
+    margin-top: 50px;
+}
+
+/* NEWS & EVENTS */
+
+.lower-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 20px;
+}
+
+.lower-title p {
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+.news {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.news-item img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.news-item p {
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.news-item p:first-of-type {
+    margin-bottom: 20px;
+}
+
+/* CHANNEL */
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40vw;
+}
+
+.video-info {
+    display: flex;
+    margin-top: 20px;
+}
+
+.video-info p {
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.video-title {
+    width: 30vw;
+    margin-right: 10vw;
+}
+
+/* ARTISTS */
+
+.artists {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 70px;
+    /* flex-direction: column; */
+}
+
+.artists-list {
+    display: flex;
+    width: 100%;
+}
+
+.artists ul {
+    display: flex;
+    flex-direction: column;
+    height: 580px;
+    width: 100%;
+    margin-left: -40px;
+}
+
+.artists li {
+    list-style: none;
+}
+
+.artists a {
+    text-decoration: none;
+    color: #2D2D2D;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.artists a:hover {
+    text-decoration: underline;
+}
+
+.artists-image {
+    width: 40%;
+    height: 40%;
+}
+
+/* LOWER */
+.lower {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.links {
+    display: flex;
+}
+
+.links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    margin-left: 20px;
+}
+
+.address p {
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #404040;
+    height: 70px;
+    margin-top: 80px;
+    padding: 0 15vw;
+    font-size: 19px;
+}
+
+footer p {
+    color: #A09FA0;
+}
+
+.terms a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    /* body {
+        background-color: hotpink;
+    } */
+
+    .lnr-menu {
+        margin-right: 10px;
+    }
+
+    .lnr-cross {
+        margin-right: 10px;
+    }
+
+    .menu {
+        padding-right: 10px;
+    }
+
+    /* MAIN IMAGE */
+    .dot {
+        height: 10px;
+        width: 10px;
+        margin-left: 16px;
+        border-radius: 10px;
+    }
+
+    .marker {
+        margin-top: 30px;
+    }
+
+    hr {
+        margin-top: 10px;
+    }
+
+    /* CHANNEL */
+    .video-info {
+        flex-direction: column;
+    }
+
+    .video-title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* ARTISTS */
+    .artists {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artists ul {
+        width: 100%;
+        height: 580px;
+    }
+
+    .artists-image {
+        width: 40%;
+        height: 40%;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:767px){
+    /* body {
+        background-color: yellow;
+    } */
+
+    section {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    .lnr-magnifier {
+        font-size: 22px;
+        margin-right: 20px;
+    }
+
+    .lnr-menu {
+        margin-right: 10px;
+        font-size: 28px;
+    }
+
+    .lnr-cross {
+        margin-right: 10px;
+        font-size: 28px;
+    }
+
+    .menu {
+        width: 65vw;
+        margin-left: 10vw;
+        padding-top: 10px;
+    }
+
+    .menu a {
+        font-size: 22px;
+        margin-right: 10px;
+    }
+
+    /* MAIN IMAGE */
+    .main-image {
+        width: 80%;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+        margin-left: 16px;
+        border-radius: 10px;
+    }
+
+    .main-image-info h2 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    .main-image-info p {
+        font-size: 24px;
+    }
+
+    .marker {
+        margin-top: 30px;
+    }
+
+    hr {
+        margin-top: 10px;
+    }
+
+    /* hr:last-of-type {
+        margin-top: 180px;
+    } */
+
+    /* NEWS & EVENTS */
+    .news {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .news-item {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    /* CHANNEL */
+    .video-info {
+        flex-direction: column;
+    }
+
+    .video-title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* ARTISTS */
+    .artists {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artists-list {
+        display: block;
+        overflow: hidden;
+        height: 550px;
+        transition: height 0.7s;
+    }
+
+    .al-view-all {
+        height: 1670px;
+    }
+
+    .artists ul {
+        width: 100%;
+        height: 550px;
+    }
+
+    .artists-image {
+        width: 60%;
+        height: 60%;
+        margin-top: 40px;
+    }
+
+    /* LOWER */
+    .lower {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .social {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .social a {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .address p {
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 1.4;
+    }
+
+    footer {
+        height: 30px;
+        padding: 0 5vw;
+        font-size: 8px;
+    }
+}
